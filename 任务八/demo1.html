@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./animate.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+</head>
+<body>
+    <div class = "container">
+        <div class = "navigation">
+            <ul class = "column_1">
+                <li><img src = "2.jpg" class = "logo" /></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">榜单</a></li>
+                <li><a href="#">歌手</a></li>
+                <li><a href="#">下载酷我客户端</a></li>
+            </ul>
+            <ul class = "column_2">
+                <li><img src = "1.jpg" class = "star_1"/></li>
+                <li><a href="#">美女秀</a></li>
+                <li><img src = "1.jpg" class = "star_2"/></li>
+                <li><a href="#">酷我耳机</a></li>
+                <li><img src = "1.jpg" class = "star_3"/></li>
+                <li><a href="#">VIP会员</a></li>
+                <li><img src = "1.jpg" class = "star_4"/></li>
+                <li><a href="#">听</a></li>
+                <li><a href="#">更多服务</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">^</a></li>
+            </ul>
+            <p>&nbsp&nbsp找到好音乐</p>
+        </div>
+        <div class = "subject">
+            <div class = "music">
+                <div class = "head">
+                    <p>喜羊羊</p>
+                </div>
+                <div class = "introduce">
+                    <ul class = "one">
+                        <li>专辑:</li>
+                        <li><a href="#">儿歌大全</a></li>
+                        <li>&nbsp歌手:</li>
+                        <li><a href="#">华语群星</a></li>
+                        <li>&nbsp分享&nbsp</li>
+                        <li><img src = "8.jpg" class = "remark"/></li>
+                        <li><a href="#">&nbsp评论</a></li>
+                    </ul>
+                    <ul class = "two">
+                        <li>上传时间：2015-10-12</li>
+                        <li>&nbsp歌曲来源：民大相思湖网球社</li>
+                    </ul>
+                </div>
+                <hr/>
+                <div class = "content">
+                    <p>别看我只是一只羊</p>
+                    <p>绿草因为我变得更香</p>   
+                    <p>天空因为我变得更蓝</p>
+                    <p>白云因为我变得柔软</p>
+                    <p>别看我只是一只羊</p>
+                    <p>羊儿的聪明难以想象</p>
+                    <p>天再高心情一样奔放</p>
+                    <p>每天都追赶太阳</p>
+                    <p>有什么难题去牵绊我都不会去心伤</p>
+                    <p>有什么危险在我面前也不会去慌乱</p>
+                    <p>就算有狼群把我追捕</p>
+                    <p>也当作游戏一场</p>
+                    <p>在什么时间都爱开心</p>
+                    <p>笑容都会飞翔</p>
+                    <p>就算会摔倒站得起来</p>
+                    <p>永远不会沮丧</p>
+                    <p>在所有天气</p>
+                    <p>拥有叫人大笑的力量</p>
+                    <p>虽然我只是羊</p>
+                    <p>喜羊羊 美羊羊 懒羊羊 沸羊羊 慢羊羊 软绵绵 红太狼 灰太狼</p>    
+                </div>
+            </div>
+            <div class = "dish">
+                <img src = "5.jpg" class = "pic"/>
+            </div>
+            <div id="player">
+                <audio autoplay="autoplay" id="mymusic">
+                  <source src="1.mp3" type="audio/mp3">
+                </audio>
+                <div class="playerLeft">
+                    <div class="musicControll">
+                        <div class="play" id="wp_playBtn"></div>
+                    </div>
+                </div>
+                <div class="playerMid">
+                    <div id="prograssBar">
+                      <div id="wp_bufBar">
+                        <div class="prograssBar" id="wp_processBar"></div>
+                        <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+                      </div>
+                    </div>
+                </div>
+                <div class="playerRight">
+                    <p id="wp_playTime" class="opacity">00.00</p>
+                    <div class="sound" id="wp_mute">
+                        <div id="soundBox">
+                          <div class="soundPro">
+                            <div class="soundPro" id="wp_volBar"></div>
+                            <a href="##" id="wp_volBtn"></a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class = "download">
+                <img src = "7.jpg" class = "down"/>
+                <p>免费下载这首歌</p>
+            </div>  
+            <div class = "live">
+                <img src = "10.jpg"/>
+                <div class = "self">
+                    <p class = "name">郭子仪——H5班</p>
+                    <img src = "gif.gif"/>
+                    <p class = "mna">喜羊羊与灰太狼</p>
+                    <a href = "##">去现场></a>
+                </div>
+            </div>
+        </div>
+        <div class = "comment">
+            <ul class = "title">
+                <li>评论</li>
+                <li>1703条评论</li>
+                <hr/>
+            </ul>
+            <div class = "mid">
+                <img src = "10.jpg" class="headshot"/>
+                <textarea class = "opinion" onkeyup="wordStatic(this);" id = "ldest" placeholder="分享你的音乐见解"></textarea>
+            </div>
+            <div class = "last">
+                <img src = "11.jpg" class = "depression"/>
+                <p class = "fnum">已输入<span id="num">0</span>个字</p>
+                <input class="tabled" type="button" value="评论" id = "btn"/>
+            </div>
+            <div class = "end">
+              <p>精彩评论</p>
+              <hr/>
+            </div>
+                <!-- <div class = "comment_box">
+                    <div class = "comment_img">
+                      <img src = "10.jpg"/>
+                    </div>
+                    <div class = "comment_top">
+                      <div class = "comment_name" style = "color:orange;">郭子仪</div>
+                      <div class = "comment_share">分享</div>
+                    </div>
+                    <div class = "comment_content">
+                      并行数据库
+                    </div>
+                    <div class = "comment_bottom">
+                      <div class = "comment_time">+new Date().toLocaleTimeString()+</div>
+                      <div class = "comment_reply">
+                      <ul>
+                        <li>回复</li>
+                        <li>0</li>
+                        <li><img src = "bg2.jpg"/></li>
+                        <li>删除</li>
+                      </ul>
+                      </div>
+                    </div> -->
+                <!-- </div> -->
+            <div id = "pl">
+
+            </div>
+          <!-- 精彩评论 -->
+        </div>
+        <div class = "pagination">
+          <ul class = "list">
+            <li><a href = "##"><</a></li>
+            <li><a href = "##">1</a></li>
+            <li><a href = "##">2</a></li>
+            <li><a href = "##">3</a></li>
+            <li><a href = "##" class = "omin">…</a></li>
+            <li><a href = "##">17</a></li>
+            <li><a href = "##">></a></li>
+          </ul>
+        </div>
+    </div>
+</body>
+<script>
+  var mymusic = document.getElementById("mymusic");
+  var wp_playBtn = document.getElementById("wp_playBtn");
+  var wp_playTime = document.getElementById("wp_playTime");
+  var wp_mute = document.getElementById("wp_mute");
+  var wp_bufBar = document.getElementById("wp_bufBar");
+  var wp_playTime = document.getElementById("wp_playTime");
+  var wp_processBar = document.getElementById("wp_processBar");
+  var wp_processBtn = document.getElementById("wp_processBtn");
+  //开始暂停
+  wp_playBtn.addEventListener("click", function(event){
+    if(mymusic.paused){
+      mymusic.play();
+      wp_playBtn.className= "zan";
+    }else{
+      mymusic.pause();
+      wp_playBtn.className = "play";
+    }
+
+  });
+  //更新进度条和当前的时间
+  mymusic.addEventListener("timeupdate",function(event){
+    var jd = mymusic.currentTime/mymusic.duration;
+    var bfd = parseFloat(jd);
+    wp_processBar.style.width = ""+bfd*300+"px";
+    wp_processBtn.style.left = ""+bfd*300+"px";
+
+
+    if (mymusic.currentTime < 10) {
+      wp_playTime.innerHTML = "00:0" + Math.floor(mymusic.currentTime); 
+    }else if(mymusic.currentTime < 60){
+      wp_playTime.innerHTML = "00:" + Math.floor(mymusic.currentTime);
+    }else{
+      var minet = parseInt(mymusic.currentTime / 60)
+      var sec = mymusic.currentTime - minet * 60;
+      if(sec < 10){
+        wp_playTime.innerHTML = "0" + minet + ":" + "0" + parseInt(sec);
+      }else{
+        wp_playTime.innerHTML = "0" + minet + ":" + parseInt(sec);
+      }
+    }
+
+  })
+  //音量暂停
+  wp_mute.addEventListener('click',function(event){
+    if(mymusic.volume == 0){
+      mymusic.volume = 0.5;
+    }else{
+      mymusic.volume = 0;
+    }
+  });
+
+  //统计文本框中字的个数
+  function wordStatic(input) {
+    var num = document.getElementById('num');
+        // 获取要显示已经输入字数文本框对象
+        if (num && input) {
+            // 获取输入框输入内容长度并更新到界面
+            var value = input.value;
+            // 将换行符不计算为单词数
+            value = value.replace(/\n|\r/gi,"");
+            // 更新计数
+            num .innerText = value.length;
+        }
+  }
+
+
+  //获取评论
+  var ldest = document.getElementById("ldest");
+  var btn = document.getElementById("btn");
+  var pl = document.getElementById("pl");
+  var now = new Date();
+  var year = now.getFullYear(); //得到年份
+  var month = now.getMonth()+1;//得到月
+  var date = now.getDate();//得到日期
+  var hour= now.getHours();//得到小时数
+  var minute= now.getMinutes();//得到分钟数
+  var second = now.getSeconds();//得到秒数
+  if (month < 10) month = "0" + month;
+  if (date < 10) date = "0" + date;
+  if (hour < 10) hour = "0" + hour;
+  if (minute < 10) minute = "0" + minute;
+  if (second < 10) second = "0" + second;
+  var time = year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
+      var ul = document.createElement('ul');
+      pl.appendChild(ul);
+      btn.onclick = function(){
+        var txt = ldest.value;
+        if(txt.length == 0){
+        alert('不能发表空评论');
+        }else{
+          var li=document.createElement('li'); 
+          ul.appendChild(li); 
+          txt = "<div class = 'comment_box'><div class = 'comment_img'><img src = '10.jpg'/></div><div class = 'comment_top'><div class = 'comment_name' style = 'color:orange;''>郭子仪</div><div class = 'comment_share'>分享</div></div><div class = 'comment_content'>"+ldest.value+"</div><div class = 'comment_bottom'><div class = 'comment_time'>"+time+"</div><div class = 'comment_reply'><ul><li>回复</li><li>0</li><li><img src = 'bg2.jpg'/></li><li>删除</li></ul></div></div></div><hr/>";
+          li.innerHTML = txt; 
+        }
+        joinComment();
+        ldest.value = "";
+        num.innerText = 0;
+        now = new Date();
+        year = now.getFullYear(); //得到年份
+        month = now.getMonth()+1;//得到月
+        date = now.getDate();//得到日期
+        hour= now.getHours();//得到小时数
+        minute= now.getMinutes();//得到分钟数
+        second = now.getSeconds();
+        if (month < 10) month = "0" + month;
+        if (date < 10) date = "0" + date;
+        if (hour < 10) hour = "0" + hour;
+        if (minute < 10) minute = "0" + minute;
+        if (second < 10) second = "0" + second;
+        time = year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
+      }
+
+      //本地存储
+    var loc=new Array();
+    var localList=localStorage.getItem('comment');
+    function joinComment(){
+        if(localStorage.getItem('comment')){
+        loc=JSON.parse(localStorage.getItem('comment'))
+    }
+    loc.push({
+        "time":time,
+        "comment":ldest.value,
+    });
+    localStorage.setItem('comment',JSON.stringify(loc));
+    }
+    var loc_arr=localStorage.getItem('comment');
+    arr=JSON.parse(loc_arr);
+    var arr=[];
+    for(var i=0;i<arr.length;i++){
+        time=arr[i].time;
+        ldest=arr[i].comment;
+    }
+
+
+
+
+</script>
+</html>

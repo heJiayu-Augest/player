@@ -1,0 +1,500 @@
+.container{
+    width: 100%;
+}
+.navigation{
+    height: 50px;
+    background: black;
+    color: white;
+}
+.navigation a:focus{
+    color: yellow;
+}
+.column_1{
+    float: left;
+    width:500px;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-left: 30px;
+}
+.column_1 li a{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+.column_1 li:nth-child(2){
+    margin-left: 20px;
+    width: 70px;
+}
+.column_1 li:nth-child(3){
+    width: 70px;
+}
+.column_1 li:nth-child(4){
+    width: 70px;
+}
+.column_1 li:nth-child(5){
+    width: 120px;
+}
+.column_2{
+    float: left;
+    width:500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 45px;
+}
+.column_2 li{
+    margin-left: -30px;
+}
+.column_2 li img{
+    position: absolute;
+    clip:rect(14px,270px,45px,230px);
+}
+.column_2 li a{
+    padding-top: 3px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+.star_1{
+    margin-top: -8px;
+    margin-left: -216px;
+}
+.star_2{
+    margin-top: -8px;
+    margin-left: -216px;
+}
+.star_3{
+    margin-top: -8px;
+    margin-left: -216px;
+}
+.star_4{
+    margin-top: -8px;
+    margin-left: -216px;
+}
+.navigation p{
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    color: white;
+    background-image: url(4.jpg);
+    background-size: 150px 20px;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+.subject{
+    width: 1200px;
+    height: 700px;
+}
+.music{
+    margin-left: 50px;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+.music a{
+    color: rgb(255, 208, 0);
+}
+.head{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 30px;
+    text-align: center;
+}
+.one{
+    font-size: 20px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.one li{
+    float: left;
+}
+.one img{
+    width: 20px;
+    height: 20px;
+}
+.two{
+    font-size: 20px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.content{
+    margin-top: 20px;
+    max-height: 400px;
+    width: 600px;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+.content p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.dish img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.dish{
+    float: right;
+    text-align: center;
+    margin-top: -600px;
+    margin-right: 100px;
+}
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+.pic{
+    transform: rotate(360deg);
+    animation: rotation 8s linear infinite;
+}
+.player {
+	width: 600px;
+	height: 60px;
+	margin: 0 auto;
+    float: left;
+}
+.playerLeft {
+	float: left;
+	width: 100px;
+	height: 60px;
+    margin-top: -270px;
+    margin-left: 720px;
+}
+.musicControll {
+	float: left;
+	margin-left: 24px;
+	display: inline;
+}
+.musicControll div {
+	float: left;
+	margin: 10px 0 0 17px;
+	cursor: pointer;
+	display: inline;
+}
+.musicControll .play,
+.musicControll .zan {
+	width: 30px;
+	height: 30px;
+	background: url(7.jpg);
+}
+.musicControll .play {
+	width: 40px;
+	height: 40px;
+	background-position: -110px -88px;
+}
+.musicControll .zan {
+	width: 40px;
+	height: 40px;
+	background-position: -207px -224px;
+}
+.musicControll .play:hover {
+	background-position: -110px -88px;
+}
+.musicControll .zan:hover {
+	background-position: -207px -224px;
+}
+.playerMid {
+	float: left;
+	width: 300px;
+	height: 60px;
+	overflow: hidden;
+    margin-top: -250px;
+    margin-left: 820px;
+
+}
+.playerMid #prograssBar {
+	float: left;
+	width: 100%;
+	height: 4px;
+	background: url(9.png);
+	margin: 10px 10px 0 0;
+	display: inline;
+}
+
+.playerMid .prograssBar {
+	width: 0px;
+	height: 4px;
+	background: #ffcd2d;
+}
+
+.playerMid #wp_bufBar {
+	width: 100%;
+	height: 4px;
+    background-color:  #999999;
+    border-radius: 20px;
+}
+
+.playerMid #wp_processBtn {
+	width: 10px;
+	height: 10px;
+	background: url(7.jpg) 182px -88px;
+	position: absolute;
+	float: left;
+    margin-left: 820px;
+    margin-top: -7px;
+}
+.playerRight {
+	float: left;
+	width: 100px;
+	height: 60px;
+}
+#wp_playTime {
+	float: left;
+    position: relative;
+	font-size: 12px;
+	color: #999999;
+	margin-top: -247px;
+    margin-left: 1130px;
+}
+.sound {
+	float: left;
+	height: 60px;
+	position: relative
+}
+#wp_mute {
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	background: url(7.jpg) -44px -1px;
+    margin-left: 1180px ;
+    margin-top: -247px;
+}
+.download{
+    width: 199px;
+    height: 46px;
+    background: url(7.jpg) 1px -41px;
+    position: absolute;
+    margin-top:-200px;
+    margin-left: 865px;
+}
+.download img{
+    position: absolute;
+    clip: rect(0px,18px,16px,1px);
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.download p{
+    float: left;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.live{
+    height: 200px;
+    float: left;
+    margin-top: -180px;
+    margin-left: 800px;
+}
+.live img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 15px;
+}
+.self{
+    margin-left: 10px;
+    width: 300px;
+    height: 80px;
+    float: left;
+    background: lightblue;
+    border-radius: 20px;
+}
+.self img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 0%;
+}
+.name{
+    color: #999999;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left:20px;
+}
+.mna{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.live a{
+    color: rgb(105, 169, 194);
+    font-size: 15px;
+    float: left;
+    margin-left: 230px;
+    margin-top: -20px;
+    float: left;
+}
+
+.comment{
+    padding-top: 20px;
+    height: 900px;
+}
+.title{
+    height: 70px;
+    margin-right: 100px;
+}
+.title li:nth-child(1){
+    margin-top: 5px;
+    font-size: 18px;
+}
+.title li:nth-child(2){
+    font-size: 13px;
+    float: left;
+    position: relative;
+    margin-left: -1000px;
+    margin-top: -30px;
+    padding-bottom: 20px;
+}
+.mid{
+    padding-top: 20px;
+    height: 150px;
+}
+.headshot{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 100px;
+}
+.opinion{
+    width: 700px;
+    height: 100px;
+    float: left;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.last{
+    height: 20px;
+}
+.depression{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: -40px;
+    margin-left: 180px;
+    border-radius: 50%;
+}
+.fnum{
+    float: left;
+    margin-top: -40px;
+    margin-left: 680px;
+}
+.tabled{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-top: -42px;
+    margin-left: 780px;
+    background: orange;
+    border:none;
+    color: white;
+}
+.end{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.end p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.comment_box{
+    height: 160px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.comment_top{
+    width: 800px;
+    float: left;
+}
+.comment_img img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.comment_name{
+    margin-left: 20px;
+    font-size: 18px;
+    float: left;
+}
+.comment_share{
+    font-size: 15px;
+    float: left;
+    margin-left: 630px;
+}
+.comment_content{
+    float: left;
+    margin-top: 40px;
+    margin-left:-780px;
+}
+.comment_bottom{
+    float: left;
+}
+.comment_time{
+    float: left;
+    margin-top: 90px;
+    margin-left: -780px;
+}
+.comment_reply{
+    margin-top: 90px;
+    margin-left: -190px;
+}
+.comment_reply li{
+    float: left;
+}
+.comment_reply li:nth-child(2){
+    margin-left:10px;
+}
+.comment_reply li:nth-child(3){
+    margin-top: -3px;
+    margin-left:10px;
+}
+.comment_reply li:nth-child(4){
+    margin-left:10px;
+}
+
+
+
+
+
+
+.pagination{
+    height: 20px;
+    width: 100%;
+}
+.list{
+    display: flex;
+    justify-content: center;
+}
+.list a{
+    float:left;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height:30px;
+    background: #d6d5d5;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.list a{
+    color:#999999;
+}
+.omin{
+    background-color: white;
+}
+.list a:focus{
+    background: yellow;
+}
